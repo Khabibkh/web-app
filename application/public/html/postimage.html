@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <div class="navbar">
+          <nav>
+            <ul id="nav-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="postimage.html">Post Image</a></li>
+              <li><a href="viewpost.html">View Post</a></li>
+              <li><a href="registration.html">Registration</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div class="form-page">
+            <div class="form-box">
+              <form class="form-group">
+                <input
+                  type="text"
+                  class="input-field"
+                  placeholder="Post Title"
+                  required
+                />
+
+                <textarea
+                  name="description"
+                  placeholder="Description"
+                  required
+                ></textarea>
+
+                <input
+                  type="file"
+                  class="fileupload"
+                  name="fileupload"
+                  accept="image/*"
+                  required
+                />
+
+                <input type="checkbox" class="check-box" />
+                <span
+                  >Agree to our
+                  <a class="privacy-link" href="#"
+                    >TOS and Privacy Rules</a
+                  ></span
+                >
+                <button type="submit" class="submit-btn">Post</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p id="footerContent">© 2022 SFSU</p>
+      </footer>
+    </div>
+  </body>
+</html>

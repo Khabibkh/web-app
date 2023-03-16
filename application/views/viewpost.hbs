@@ -1,0 +1,53 @@
+<div class="full-page">
+  <main>
+    <section>
+      <div class="view-post-page">
+        <div class="view-form-box">
+          <div class="view-post">
+            <div class="post-title">
+              <h2>{{currentPost.title}}</h2>
+            </div>
+            <div class="post-creation-time">
+              <span>{{formatDate currentPost.createdAt}}</span>
+            </div>
+            <div class="post-image">
+              <img
+                src="/{{currentPost.image}}"
+                alt="groot"
+                width="300px"
+                height="300px"
+              />
+            </div>
+            <div class="comment-box">
+              <textarea
+                id="comment-text"
+                class="comment-box-text"
+                rows="1"
+                cols="30"
+              ></textarea>
+              <button
+              class="button-4"
+                type="submit"
+                id="comment-button"
+                data-postid={{currentPost.id}}
+              >Send</button>
+            </div>
+          </div>
+        </div>
+        <div id="view-post-card" class="view-post-card">
+          <ul>
+            {{#each currentPost.comments}}
+              <div class="view-post-comment">
+                <h3>@{{this.username}}</h3>
+                <p>{{this.text}}</p>
+                <span>{{formatDate this.createdAt}}</span>
+              </div>
+            {{/each}}
+
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </main>
+</div>

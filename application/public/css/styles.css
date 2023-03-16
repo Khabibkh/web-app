@@ -1,0 +1,511 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.full-page {
+  height: 100vh;
+  width: 100%;
+  background: #222831;
+
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.navbar {
+  background: #222831;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 30px;
+  padding-top: 50px;
+}
+nav {
+  flex: 1;
+  text-align: center;
+  padding-top: 30px;
+}
+nav ul {
+  display: inline-block;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 70px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #eeeeee;
+  font-family: sans-serif;
+}
+nav ul li button {
+  font-size: 20px;
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+nav ul li a:hover {
+  color: #00adb5;
+}
+a {
+  text-decoration: none;
+  color: palevioletred;
+  font-size: 28px;
+}
+
+.form-box {
+  width: 380px;
+  height: 480px;
+  position: relative;
+  margin: 2% auto;
+  /* background:rgba(0,0,0,0.3); */
+  background: #393e46;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.form-box-login {
+  width: 380px;
+  height: 340px;
+  position: relative;
+  margin: 10% auto;
+  background: #393e46;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.button-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  border-radius: 30px;
+}
+
+.input-form-group-login {
+  top: 70px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+.form-group{
+  top: 150px;
+  margin-left: 40px;
+  margin-top: 40px;
+  width: 280px;
+}
+
+.view-post{
+  top: 250px;
+  margin-left: 40px;
+  margin-top: 40px;
+  width: 280px;
+}
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+.submit-btn {
+  width: 50%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: #00adb5;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+.submit-btn:hover {
+  background: #222831;
+  color: #eeeeee;
+}
+.check-box {
+  margin: 20px 10px 4px 0;
+}
+input {
+  color: #eeeeee;
+}
+
+span {
+  color: #eeeeee;
+  font-size: 12px;
+  bottom: 58px;
+}
+#login {
+  left: 50px;
+}
+#login input {
+  color: white;
+  font-size: 15;
+}
+#register {
+  left: 450px;
+}
+
+#register input {
+  color: #eeeeee;
+  font-size: 15px;
+}
+
+.privacy-link {
+  color: rgb(134, 134, 213);
+  font-size: 12px;
+}
+
+#footerContent {
+  /* color: #eeeeee;
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  height: 3.5rem;
+  text-align: center;
+  background-color: #222831;
+  padding-top: 20px; */
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 10px;
+  box-sizing: border-box;
+  border: 2px solid #999;
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 16px;
+  resize: none;
+  color: #eeeeee;
+}
+
+.fileupload {
+  background-color: transparent;
+  margin: 20px;
+}
+
+.view-post {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #222831;
+}
+
+/*password validation*/
+.password-box-registration {
+  width: 450px;
+  height: auto;
+  position: absolute;
+  margin: 10% auto;
+  background: #D8D8D8;
+  right: 5%;
+  top: 0;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+
+.password-box-registration ul {
+  list-style-position: inside;
+  /* list-style: none; */
+  padding: 20px;
+   
+}
+
+.password-box-registration li {
+  padding: 11px;
+  font-size: 20px;
+  color: #DD5353;
+}
+
+.password-box-registration li span {
+  font-size: 10px;
+  color: #DD5353;
+  font-family: monospace;
+}
+
+
+
+/*Username validation*/
+.error-box-registration {
+  width: 450px;
+  height: auto;
+  position: absolute;
+  margin: 10% auto;
+  background: #D8D8D8;
+  right: 5%;
+  top: 0;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+
+
+.error-box-registration ul {
+  list-style-position: inside;
+  padding: 20px;
+   
+}
+
+.error-box-registration li {
+  padding: 10px;
+  font-size: 20px;
+  
+  color: #DD5353;
+}
+
+.error-box-registration li span {
+  font-size: 10px;
+  color: #DD5353;
+  font-family: monospace;
+}
+
+/*CONFIRM PASSWORD*/
+
+.confirm-password-registration {
+  width: 450px;
+  height: auto;
+  position: absolute;
+  margin: 10% auto;
+  background: #D8D8D8;
+  right: 5%;
+  top: 0;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+
+.confirm-password-registration ul {
+  list-style-position: inside;
+  padding: 20px;
+   
+}
+
+.confirm-password-registration li {
+  padding: 10px;
+  font-size: 20px;
+  
+  color: #DD5353;
+}
+
+.confirm-password-registration li span {
+  font-size: 10px;
+  color: #DD5353;
+  font-family: monospace;
+}
+
+/*
+  Home page card
+*/
+
+.full-page-home {
+  width: 100%;
+  background: #222831;
+
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow-y: scroll;
+  min-height: 100vh;
+}
+
+.product-img{
+  width: 200px;
+  height: 200px;
+}
+.product-list {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 20px 0;
+  transition: opacity 1s;
+}
+
+.prod-title {
+  width: 200px;
+  height: 100px;
+  padding: 20px 20px 0 20px;
+  background-color: #fff;
+}
+
+.prod-info {
+  display: flex;
+}
+
+#photo-count {
+  margin: auto;
+  width: 15%;
+  padding: 10px;
+  color: white;
+  margin-top: 60px
+}
+
+.card-num-title{
+  float: left;
+  margin-right: 5px;
+  font-size: italic;
+  font-weight: bold;
+}
+
+#card-num {
+  font-weight: bold;
+}
+
+
+
+/*card in home page*/
+
+.home-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+   
+}
+
+/* .small-card {
+  height: 400px;
+  width: 200px;
+} */
+
+#home-card-piece {
+  /* background-color: #474E68; */
+}
+
+
+
+/*View post*/
+.view-post-card {
+  width: 450px;
+  height: auto;
+  position: absolute;
+  margin: 10% auto;
+  /* background: #D8D8D8; */
+  right: 5%;
+  top: 0;
+  border-radius: 10px;
+  line-height: 20px;
+}
+
+.view-post-comment {
+  border:  black;
+  border-radius: 20px;
+  margin-right: 50px;
+  padding-left: 20px;
+  background-color: #65647C;
+  margin-top: 20px;
+  padding: 10px 25px 10px 20px;
+}
+
+.view-post-comment h3 {
+  color: #8B7E74;
+}
+
+.view-post-comment p {
+  padding-left: 20px;
+  color: #F1D3B3;
+}
+
+.view-post-comment span {
+  padding-left: 250px;
+  color: #F1D3B3;
+}
+
+.view-form-box {
+  width: 380px;
+  height: 620px;
+  position: relative;
+  margin: 2% auto;
+  /* background:rgba(0,0,0,0.3); */
+  background: #393e46;
+  padding: 10px;
+  padding-top: 50px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.post-image {
+  padding-bottom: 20px;
+}
+
+.post-creation-time span {
+  padding-left: 240px;
+  color: #F1D3B3;
+}
+
+.post-title {
+  color: #F1D3B3;
+  padding-top: 70px;
+}
+
+
+textarea {
+  background-color: #65647C;
+  color: #F1D3B3;
+}
+
+
+/* CSS */
+.button-4 {
+  appearance: none;
+  background-color: #6B728E;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #F1D3B3;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.button-4:hover {
+  background-color: #222831;
+  text-decoration: none;
+  transition-duration: 0.1s;
+  color: white;
+}
+
+
+
+.home-card a {
+  text-decoration: none;
+}
+

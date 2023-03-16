@@ -1,0 +1,105 @@
+<div class="full-page">
+  <main>
+    <section>
+      <div id="login-form" class="login-page">
+        <div class="form-box">
+          <form
+            name="myForm"
+            id="register"
+            class="form-group"
+            onsubmit="return userNameValidation(event)"
+            method="POST"
+            action="users/register"
+            enctype="application/x-www-form-urlencoded"
+          >
+            <input
+              type="text"
+              id="input-field"
+              class="input-field"
+              placeholder="Username"
+              name="fname"
+            />
+            <input
+              id="email"
+              type="email"
+              name="email"
+              class="input-field"
+              placeholder="Email"
+            />
+            <input
+              id="password"
+              type="password"
+              class="input-field"
+              placeholder="Password"
+              name="password1"
+            />
+            <input
+              id="confirm-password1"
+              type="password"
+              class="input-field"
+              placeholder="Confirm Password"
+              name="confirm-password"
+            />
+
+            <input type="checkbox" class="check-box" required />
+            <span>Accept if you are 13+ years of age</span>
+            <br />
+            <input type="checkbox" class="check-box" required />
+            <span>Agree to our
+              <a class="privacy-link" href="#">TOS and Privacy Rules</a></span>
+            <button type="submit" class="submit-btn">Register</button>
+          </form>
+        </div>
+        <div id="error-box-registration" class="error-box-registration">
+          <ul>
+            <li id="user-start-char-li">
+              <span id="user-start-char-span">Enter a username that begins with
+                a character ([a-zA-Z])</span>
+            </li>
+
+            <li id="user-three-char-li">
+              <span id="user-three-char-span">Enter a username that is 3 or more
+                alphanumeric characters.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div id="password-box-registration" class="password-box-registration">
+          <ul>
+            <li id="password-eight-char-li">
+              <span id="password-eight-char-span">Enter a password that is 8 or
+                more characters
+              </span>
+            </li>
+
+            <li id="password-uppercase-char-li">
+              <span id="password-uppercase-char-span">
+                At least 1 upper case letter</span>
+            </li>
+
+            <li id="password-number-char-li">
+              <span id="password-number-char-span">At least 1 number </span>
+            </li>
+
+            <li id="password-special-char-li">
+              <span id="password-special-char-span">At least 1 of the these: / *
+                - + ! @ # $ ^ & ~ [ ]</span>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          id="confirm-password-registration"
+          class="confirm-password-registration"
+        >
+          <ul>
+            <li id="confirm-password-char-li">
+              <span id="confirm-password-char-span">Confirm password inputs are
+                the same</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>

@@ -1,0 +1,32 @@
+<main>
+  <div class="full-page-home">
+    <div class="home-card">
+      {{#each results}}
+
+        <div class="home-card" style="width: 18rem;">
+          <div
+            id="home-card-piece"
+            class="card text-white mb-3"
+            style="width: 18rem; background-color: #3F4E4F;"
+          >
+            <img
+              class="card-img-top"
+              src="/{{this.thumbnail}}"
+              alt="Card image cap"
+              style="height: 286px; width: auto; padding: 7px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{this.title}}</h5>
+              <p class="card-text">{{this.description}}</p>
+              <a
+                href="/posts/{{this.id}}"
+                class="button-4"
+                style="text-decoration: none;"
+              >Details</a>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</main>
